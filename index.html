@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to the Food Boutique!" />
+  <title>Food Boutique</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+  
+  <script type="module" crossorigin src="/js_93_SerhiiOberemchuk/commonHelpers2.js"></script>
+  <link rel="modulepreload" crossorigin href="/js_93_SerhiiOberemchuk/assets/vendor-2bc536cc.js">
+  <link rel="modulepreload" crossorigin href="/js_93_SerhiiOberemchuk/assets/scrollUp-9d56be72.js">
+  <link rel="stylesheet" href="/js_93_SerhiiOberemchuk/assets/scrollUp-487e9ddf.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="container header-container">
+    <a href="./index.html" class="logo-title link">
+      <div class="logo-ellips">
+        <svg class="logo-icon">
+          <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-logo"></use>
+        </svg>
+      </div>
+      <svg class="logo-title-icon">
+        <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-Food-Boutique"></use>
+      </svg>
+    </a>
+    <nav class="header-nav">
+      <a href="./index.html" class="home-link">Home</a>
+      <a href="./cart.html" class="header-cart-link"><svg class="header-cart-icon">
+          <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-basket"></use>
+        </svg></a>
+      <p class="cart-quanity">Cart(<span class="quantity-in-cart-header">0</span>)</p>
+    </nav>
+  </div>
+</header>
+  <section class="hero">
+    <div class="container hero_container">
+        <h1 class="title_h1 hero_title">Welcome to the <span class="hero_span">Food</span> Boutique!</h1>
+        <p class="hero_text">With Food Boutique, you're not just subscribing to food, you're signing up for a fresher,
+            fitter, and happier
+            you.</p>
+        <div class="hero-picture-box">
+            <picture class="hero-picture">
+                <source class="hero_img" srcset="/js_93_SerhiiOberemchuk/assets/desktop-hero-1x-min-4f82dc3d.png 1x, /js_93_SerhiiOberemchuk/assets/desktop-hero-2x-min-22819c10.png 2x" media="(min-width: 1440px)" />
+                <source class="hero_img" srcset="/js_93_SerhiiOberemchuk/assets/tablet-hero-1x-min-7ba3b8b5.png 1x, /js_93_SerhiiOberemchuk/assets/tablet-hero-2x-min-71a8ac12.png 2x" media="(min-width: 768px)" />
+                <source class="hero_img" srcset="/js_93_SerhiiOberemchuk/assets/mobile-hero-1x-min-b8e88fd2.png 1x, /js_93_SerhiiOberemchuk/assets/mobile-hero-2x-min-2eb56b84.png 2x" media="(max-width: 767px)" />
+                <img class="hero_img" src=" ./images/desktop-hero-1x-min.png"
+                    alt="a man holds a box with vegetables in his hands" width="1240" />
+            </picture>
+            <div class="hero-organic-label">
+                <img src="/js_93_SerhiiOberemchuk/assets/organic-2a40f477.jpg" alt="organic label" class="organic-img">
+
+            </div>
+        </div>
+    </div>
+
+</section>
+  <section class="filter_section">
+  <div class="container">
+    <h2 class="filter_title">Filter:</h2>
+    <form class="filter_form">
+      <div class="filter_field">
+        <label for="filter-text"></label>
+        <div class="search-filter">
+          <input
+            class="search-input input_name"
+            type="text"
+            name="text"
+            id="filter-text"
+            placeholder="Search for anything"
+          />
+
+          <button class="filter_button" type="submit" aria-label="submit">
+            <svg width="20" height="20" class="icon-filter">
+              <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-loupe"></use>
+            </svg>
+          </button>
+          <!-- <div class="filter_icon_position">
+                    </div> -->
+        </div>
+      </div>
+      <div class="filter_field">
+        <!-- <label for="categories"></label> -->
+        <select
+          class="search-input select_categories select-filter"
+          name="categories"
+          id="categories"
+          aria-label="categories"
+        >
+          <option value="" disabled selected hidden>Categories</option>
+        </select>
+        <div class="filter_icon_position">
+          <svg width="20" height="20" class="icon-filter">
+            <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-chevron-down"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="filter_field">
+        <!-- <label for="sort"></label> -->
+        <select
+          class="search-input select_search select-filter"
+          name="sort"
+          id="sort"
+          aria-label="sort"
+        >
+          <option value="byABC=true" selected>A to Z</option>
+          <option value="byABC=false">Z to A</option>
+          <option value="byPrice=true">Cheap</option>
+          <option value="byPrice=false">Expensive</option>
+          <option value="byPopularity=true">Popular</option>
+          <option value="byPopularity=false">Not popular</option>
+        </select>
+        <div class="filter_icon_position">
+          <svg width="20" height="20" class="icon-filter">
+            <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-chevron-down"></use>
+          </svg>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+  <section class="products">
+  <div class="container">
+    <div class="basic-wrapper">
+      <h2 class="visually-hidden">The top list of products</h2>
+      <div class="not-found-wrapper">
+        <h3>Nothing was found for the selected <span>filters...</span></h3>
+        <p>
+          Try adjusting your search parameters or browse our range by other
+          criteria to find the perfect product for you.
+        </p>
+      </div>
+      <!-- <div class="for-span-loader"></div> -->
+      <!-- <span class="loader"></span> -->
+      <ul class="basic-list"></ul>
+      <div class="pages-wrapper">
+        <button class="pages-btn-left is-hover" type="button" aria-label="left">
+          <svg class="pages-btn-icon" width="24" height="24">
+            <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-chevron-left"></use>
+          </svg>
+        </button>
+        <ul class="pages-list"></ul>
+        <button
+          class="pages-btn-right is-hover"
+          type="button"
+          aria-label="right"
+        >
+          <svg class="pages-btn-icon" width="24" height="24">
+            <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-chevron-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="secondary-wrapper">
+      <div class="popular-wrapper">
+        <h2 class="secondary-headers title_h2">Popular products</h2>
+        <ul class="popular-list"></ul>
+      </div>
+      <div class="discount-wrapper">
+        <h2 class="secondary-headers title_h2">Discount products</h2>
+        <ul class="discount-list"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+  <div class="container">
+    <div class="footer-flex-container0">
+      <div class="brand-and-socials">
+        <a class="brand-link" href="./index.html">
+          <div class="logo-circle">
+            <svg class="footer-logo">
+              <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-logo"></use>
+            </svg>
+          </div>
+
+          <p class="footer-brand-name">Food Boutique</p>
+        </a>
+
+        <ul class="socials">
+          <li>
+            <a rel="noopener" target="_blank" class="footer-socials-frame" href="https://www.facebook.com/goITclub/">
+              <svg class="footer-socials-logo">
+                <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a rel="noopener" target="_blank" class="footer-socials-frame" href="https://www.instagram.com/goitclub/">
+              <svg class="footer-socials-logo">
+                <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a rel="noopener" target="_blank" class="footer-socials-frame" href="https://www.youtube.com/c/GoIT">
+              <svg class="footer-socials-logo">
+                <use href="/js_93_SerhiiOberemchuk/assets/icons-69d7e34a.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-flex-container1">
+        <div class="footer-text">
+          <p class="big-footer-text">
+            Discover the Variety of Flavors and Quality
+          </p>
+          <p class="small-footer-text">
+            An online store where you will find fresh, natural and <br />
+            delicious products for a healthy life and unforgettable <br />
+            gastronomic adventures.
+          </p>
+        </div>
+
+        <div>
+          <form class="footer-email-form">
+            <p class="footer-form-text">
+              Subscribe and learn about new products!
+            </p>
+            <input class="footer-email-input" type="email" name="email-input" placeholder="Email"
+              title="Enter valid email address" required />
+            <button class="footer-button" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-text">
+      <p class="all-rights-reserved">Food Boutique. All rights reserved.</p>
+      <p><a href="">Privacy Policy</a> / <a href="">Terms of Service</a></p>
+    </div>
+  </div>
+</footer>
+  <div class="backdrop">
+  <div class="container modal_window"></div>
+</div>
+
+  <button type="button" id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="scrollToTopBtn"><span
+        class="arrow-up"></span></button>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+
+</html>
